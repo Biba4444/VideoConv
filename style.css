@@ -1,0 +1,46 @@
+video {
+  transform: rotateY(180deg);
+}
+
+pre {
+  font-family: monospace;
+  line-height: 6px;
+  letter-spacing: -1px;
+}
+
+body {
+  width: 100vw;
+  height: 100vw;
+  background: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+  video {
+    border-radius: 15px;
+  }
+  .vidCont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+  button {
+    outline: none;
+    color: #fafafa;
+    border: 0;
+    border-radius: 0;
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    background-color: #1a1a1a;
+    &:hover {
+      background-color: orangered;
+    }
+    transition: 200ms;
+  }
+}
